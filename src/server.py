@@ -11,8 +11,8 @@ import os
 idLen = 3
 
 # init storage dir
-store = sys.argv[2]
-pas = sys.argv[3]
+store = sys.argv[3]
+pas = sys.argv[4]
 
 # setup app
 app = Flask(__name__)
@@ -70,4 +70,4 @@ def genId():
 
 # start server
 if __name__ == '__main__':
-    app.run(host=sys.argv[1], port=80)
+    app.run(host=sys.argv[1], port=sys.argv[2])
