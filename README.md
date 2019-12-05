@@ -5,7 +5,7 @@ Start Server
 `sudo python3 src/server.py <ip> <port> <storage dir> <password dir>`   
    
 Add Paste (Will return id)   
-`curl --data @<file.txt> <ip>/paste/create?pass=<pass>`   
+`curl --data-binary @<file.txt> <ip>/paste/create?pass=<pass>`   
    
 Delete Paste (Will return success)   
 `curl <ip>/paste/delete?id=<id>&pass=<pass>`  
